@@ -1,0 +1,130 @@
+appData
+	code
+	key
+	name
+	status
+
+account
+	password
+	role (default basic, admin, trainer, student)
+	profileId
+	status
+
+profile
+	firstName
+	lastName
+	mobile
+	email
+	address
+	city
+	state
+	country
+	pincode
+
+menu
+	name
+	link
+	icon
+	
+
+menuAccess
+	role
+	menuId
+	status
+
+
+user
+	profileId
+	type ( trainer or student)
+
+course
+	name
+	img
+	notes(description)
+	status
+
+topic
+	name
+	notes
+	type (advance, Intermediate, basic)
+	courseId
+	status
+
+weblink
+	topicId
+	notes
+	status
+
+vediolink
+	topicId
+	notes
+	status
+
+
+batchHistory
+	room
+	fromTime
+	toTime
+	date
+	batchId
+	topicId
+	topicStatus( completed, inprogress, pending)
+
+batch
+	name
+	trainerId
+	supportTrainer
+	courseId
+	courseType (advance, Intermediate, basic)
+
+batchStudent
+	batchId
+	userId
+
+batchForum
+	batchId
+	query
+	updatedBy
+	updateDate
+
+batchForumComment
+	batchForumId
+	comment
+	updateBy
+	updateDate
+
+assignment
+	id
+	courseId
+	topicId
+	notes
+	question
+	isMultiAns ( true or false)
+	optionA
+	checkA ( true or false)
+	optionB
+	checkB ( true or false)
+	optionC
+	checkC ( true or false)
+	optionD
+	checkD ( true or false)
+
+batchAssignment
+	notes
+	batchId
+	txnDate
+	passMarks( default 80)
+	topicId
+
+batchStudentAssignment
+	batchAssignmentId
+	userId
+	marks
+	status( Assign, Pass, Fail)
+	txnDate
+
+batchAssigmentReview
+	batchStudentAssignmentId
+	questionId
+	YourAns
+	isRightAns(true, false)
